@@ -40,7 +40,10 @@ const tint: React.CSSProperties = {
 };
 
 const content: React.CSSProperties = {
-  zIndex: 3,
+  position: "relative",
+  zIndex: 10,
+  padding: "1rem",
+  color: "inherit",
 };
 
 export const GlassDiv: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
