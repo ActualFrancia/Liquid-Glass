@@ -22,7 +22,7 @@ export const Filter = () => (
         <feFuncB type="gamma" amplitude="0" exponent="1" offset="0.5" />
       </feComponentTransfer>
 
-      <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap" />
+      <feGaussianBlur in="turbulence" stdDeviation="30" result="softMap" />
 
       <feSpecularLighting
         in="softMap"
