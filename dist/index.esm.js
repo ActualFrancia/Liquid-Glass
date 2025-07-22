@@ -463,7 +463,10 @@ const tint = {
     borderRadius: "inherit",
 };
 const content = {
-    zIndex: 3,
+    position: "relative",
+    zIndex: 10,
+    padding: "1rem",
+    color: "inherit",
 };
 const GlassDiv = ({ children, style, className = "", ...props }) => (jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [jsxRuntimeExports.jsx("style", { children: `
         .liquid-glass-wrapper:hover .liquid-glass-shine {
