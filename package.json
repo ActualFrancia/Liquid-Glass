@@ -1,6 +1,6 @@
 {
   "name": "liquid-glass-reactjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A sleek React UI container with a customizable liquid glass effect. Perfect for modern, frosted-glass interfaces.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
