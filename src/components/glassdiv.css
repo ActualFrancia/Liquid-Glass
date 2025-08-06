@@ -1,0 +1,50 @@
+.liquid-glass {
+  overflow: hidden;
+  backdrop-filter: blur(50px);
+  isolation: isolate;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1),
+              inset 1px 1px 1px 0 rgba(255, 255, 255, 0.5), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.liquid-glass:hover {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1),
+              inset 1px 1px 10px 1px rgba(255, 255, 255, 0.5),
+              inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.liquid-glass-dark {
+  overflow: hidden;
+  backdrop-filter: blur(50px);
+  isolation: isolate;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.5),
+              inset 1px 1px 1px 0 rgba(255, 255, 255, 0.2), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.2);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.liquid-glass-dark:hover {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.5),
+              inset 1px 1px 10px 1px rgba(255, 255, 255, 0.5),
+              inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.liquid-glass-tinted {
+  overflow: hidden;
+  backdrop-filter: blur(50px);
+  isolation: isolate;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1),
+              inset 1px 1px 1px 0 rgba(255, 255, 255, 0.5), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.liquid-glass-tinted:hover {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1),
+              inset 1px 1px 10px 1px rgba(255, 255, 255, 0.5),
+              inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
+} 
