@@ -16,25 +16,21 @@ Bring your UI to life with **liquid glass** effects for React — featuring anim
 
 ```bash
 npm i liquid-glass-reactjs
-
 ```
 
 Or using yarn:
 
 ```bash
 yarn add liquid-glass-reactjs
-
 ```
-
-This package can be installed easily using npm or yarn. Simply run:
 
 🔗 [View on npm](https://www.npmjs.com/package/liquid-glass-reactjs)
 
 ---
 
-### 🚀 Usage Example
+## 🚀 Usage Examples
 
-To use the `GlassDiv` component, import it from the package. You can style it either by passing a `className` or inline `style` props, or both — for example to control border-radius, size, colors, etc. Then place any content inside it to get the liquid glass effect.
+### Basic Glass Effect
 
 ```tsx
 import React from "react";
@@ -44,9 +40,104 @@ export default function Demo() {
   return (
     <div className="h-96 w-96">
       <GlassDiv className="rounded-xl">
-        <h2 className="text-2xl"> Hello Glass ✨ </h2>
+        <h2 className="text-2xl">Hello Glass ✨</h2>
       </GlassDiv>
     </div>
   );
 }
 ```
+
+### Dark Glass Variant
+
+```tsx
+import React from "react";
+import { DarkGlassDiv } from "liquid-glass-reactjs";
+
+export default function Demo() {
+  return (
+    <div className="h-96 w-96">
+      <DarkGlassDiv className="rounded-xl">
+        <h2 className="text-2xl text-white">Dark Glass 🌙</h2>
+      </DarkGlassDiv>
+    </div>
+  );
+}
+```
+
+### Tinted Glass with Custom Color
+
+```tsx
+import React from "react";
+import { TintedGlassDiv } from "liquid-glass-reactjs";
+
+export default function Demo() {
+  return (
+    <div className="h-96 w-96">
+      <TintedGlassDiv 
+        className="rounded-xl" 
+        tint="rgba(255, 0, 255, 0.1)"
+      >
+        <h2 className="text-2xl">Tinted Glass 🌈</h2>
+      </TintedGlassDiv>
+    </div>
+  );
+}
+```
+
+### Custom Filter Component
+
+```tsx
+import React from "react";
+import { Filter } from "liquid-glass-reactjs";
+
+export default function CustomGlass() {
+  return (
+    <div className="h-96 w-96">
+      <Filter />
+      <div className="liquid-glass rounded-xl">
+        <h2 className="text-2xl">Custom Glass 🎨</h2>
+      </div>
+    </div>
+  );
+}
+```
+
+---
+
+## 📜 Available Components
+
+| Component | Description |
+|-----------|-------------|
+| `GlassDiv` | Standard glass effect with light theme |
+| `DarkGlassDiv` | Glass effect with dark theme |
+| `TintedGlassDiv` | Glass effect with customizable tint color |
+| `Filter` | SVG filter component for custom glass effects |
+
+---
+
+## 🔧 Props Reference
+
+### GlassDiv & DarkGlassDiv Props
+
+| Prop        | Type                             | Default | Description                                                            |
+| ----------- | -------------------------------- | ------- | ---------------------------------------------------------------------- |
+| `children`  | `React.ReactNode`                | —       | Any content to render inside the glass container.                      |
+| `className` | `string`                         | `""`    | Optional CSS classes applied to the wrapper div.                      |
+| `style`     | `React.CSSProperties`            | `{}`    | Optional inline styles (e.g., `borderRadius`, `width`, `height`, etc). |
+| `...props`  | `HTMLAttributes<HTMLDivElement>` | —       | Any valid HTML div props will be passed to the wrapper.                |
+
+### TintedGlassDiv Props
+
+| Prop        | Type                             | Default | Description                                                            |
+| ----------- | -------------------------------- | ------- | ---------------------------------------------------------------------- |
+| `children`  | `React.ReactNode`                | —       | Any content to render inside the glass container.                      |
+| `className` | `string`                         | `""`    | Optional CSS classes applied to the wrapper div.                      |
+| `style`     | `React.CSSProperties`            | `{}`    | Optional inline styles (e.g., `borderRadius`, `width`, `height`, etc). |
+| `tint`      | `string`                         | —       | Custom tint color (e.g., `"rgba(255, 0, 255, 0.1)"`).                |
+| `...props`  | `HTMLAttributes<HTMLDivElement>` | —       | Any valid HTML div props will be passed to the wrapper.                |
+
+---
+
+## 🔗 Links
+
+🏯 [Project on GitHub](https://github.com/TahmineRH/liquid-glass)
